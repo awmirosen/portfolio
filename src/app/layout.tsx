@@ -1,18 +1,29 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { Geist } from "next/font/google";
+import Providers from "@/providers/index";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Awmirosen",
 };
 
-export default function RootLayout({
+const geist = Geist({ subsets: ["latin"] });
+
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   return (
-    <html lang="en" className={`h-full antialiased`}>
-      <body className="min-h-full">{children}</body>
+    <html
+      lang="en"
+      className={`${geist.className} h-full antialiased`}
+      suppressHydrationWarning
+    >
+      <body className="min-h-full">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
-}
+};
+export default RootLayout;
