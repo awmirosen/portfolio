@@ -1,11 +1,5 @@
-import Link from "next/link";
-
 const Logo = () => {
-  return (
-    <Link href="/">
-      <h1 className="font-bold text-xl">Awmirosen</h1>
-    </Link>
-  );
+  return <h1 className="font-bold text-xl select-none">Awmirosen</h1>;
 };
 
 export default Logo;

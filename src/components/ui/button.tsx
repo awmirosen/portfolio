@@ -40,7 +40,6 @@ export const Button = ({
         border
         cursor-pointer
         font-medium
-        transition-colors duration-200
         disabled:pointer-events-none
         disabled:opacity-50
         ${variants[variant]}
