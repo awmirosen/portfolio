@@ -9,6 +9,8 @@
   --secondary: oklch(0.967 0.001 286.375);
   --muted: oklch(0.552 0.016 285.938);
   --border: oklch(0.92 0.004 286.32);
+  --accent: oklch(0.94 0.003 286);
+  --accent-foreground: oklch(0.141 0.005 285.823);
 }
 .dark {
   --background: oklch(0.141 0.005 285.823);
@@ -18,6 +20,8 @@
   --secondary: oklch(0.274 0.006 286.033);
   --muted: oklch(0.705 0.015 286.067);
   --border: oklch(0.274 0.006 286.033);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground: oklch(0.985 0 0);
 }
 
 @theme inline {
@@ -28,6 +32,8 @@
   --color-secondary: var(--secondary);
   --color-muted: var(--muted);
   --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
 }
 
 @layer base {
