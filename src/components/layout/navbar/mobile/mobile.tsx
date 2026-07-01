@@ -11,7 +11,7 @@ const Mobile = () => {
 
   return (
     <>
-      <Toggle toggleFunc={() => setOpen(!open)} icon={<MenuIcon size={20} />} />
+      <Toggle toggleFunc={() => setOpen(!open)} icon={<MenuIcon size={18} />} />
       <AnimatePresence>
         {open && <Panel onClose={() => setOpen(false)} />}
       </AnimatePresence>

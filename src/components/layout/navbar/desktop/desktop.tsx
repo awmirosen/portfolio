@@ -1,4 +1,4 @@
-import { MenuItems } from "./menu-items";
+import { MenuItems } from "@/components/layout/navbar/menu-items";
 
 const Desktop = () => {
   return (

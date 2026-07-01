@@ -18,7 +18,7 @@ const Panel = ({ onClose }: PanelType) => {
       <Container className="py-3 px-2! flex flex-col items-center h-full">
         {/* Toggle */}
         <div className="h-1/6 pt-2" dir="rtl">
-          <Toggle icon={<X size={20} />} toggleFunc={onClose} />
+          <Toggle icon={<X size={18} />} toggleFunc={onClose} />
         </div>
         {/* Menu */}
         <div className="h-4/6 flex text-center">
