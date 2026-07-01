@@ -1,4 +1,8 @@
+"use client";
+
 import Container from "@/components/layout/container";
+import { motion } from "motion/react";
+import { slideFromRight } from "@/lib/motion";
 import { Toggle } from "./toggle";
 import { X } from "lucide-react";
 import { Menu } from "./menu";
@@ -10,14 +14,14 @@ type PanelType = {
 
 const Panel = ({ onClose }: PanelType) => {
   return (
-    <div className="fixed inset-0 bg-background">
+    <motion.div {...slideFromRight} className="fixed inset-0 backdrop-blur-lg">
       <Container className="py-3 px-2! flex flex-col items-center h-full">
         {/* Toggle */}
         <div className="h-1/6 pt-2" dir="rtl">
           <Toggle icon={<X size={20} />} toggleFunc={onClose} />
         </div>
         {/* Menu */}
-        <div className="h-4/6 flex">
+        <div className="h-4/6 flex text-center">
           <Menu />
         </div>
         {/* ThemeToggle */}
@@ -25,7 +29,7 @@ const Panel = ({ onClose }: PanelType) => {
           <ToggleTheme />
         </div>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 
