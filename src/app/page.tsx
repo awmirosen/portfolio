@@ -1,7 +1,16 @@
+import Container from "@/components/layout/container";
+import Hero from "@/components/home/hero";
+
 const Home = () => {
   return (
     <main>
-      <h1>content</h1>
+      <Container>
+        <Hero />
+        <Hero />
+        <Hero />
+        <Hero />
+        <Hero />
+      </Container>
     </main>
   );
 };
