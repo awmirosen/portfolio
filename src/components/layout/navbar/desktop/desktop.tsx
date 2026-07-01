@@ -1,6 +1,6 @@
 import { MenuItems } from "./menu-items";
 
-const Menu = () => {
+const Desktop = () => {
   return (
     <ul className="flex gap-x-4">
       <MenuItems />
@@ -8,4 +8,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Desktop;
