@@ -11,7 +11,7 @@ export const ThemeToggleButton = () => {
       className="p-2 rounded-full cursor-pointer transition-all duration-300"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      {theme === "dark" ? <SunDim size={18} /> : <Moon size={18} />}
+      {theme === "dark" ? <SunDim size={20} /> : <Moon size={20} />}
     </button>
   );
 };

@@ -2,12 +2,12 @@ import { Home, FolderOpen } from "lucide-react";
 
 export const DOCK_LINKS = [
   {
-    title: "Home",
+    label: "Home",
     href: "/",
     icon: Home,
   },
   {
-    title: "Projects",
+    label: "Projects",
     href: "/projects",
     icon: FolderOpen,
   },
