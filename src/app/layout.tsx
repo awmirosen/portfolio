@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import Providers from "@/providers/index";
 import "@/styles/globals.css";
-import Navbar from "@/components/layout/navbar";
+import Dock from "@/components/layout/dock";
 
 export const metadata: Metadata = {
   title: "Awmirosen",
@@ -23,7 +23,7 @@ const RootLayout = ({
     >
       <body className="min-h-full">
         <Providers>
-          <Navbar />
+          <Dock />
           {children}
         </Providers>
       </body>
