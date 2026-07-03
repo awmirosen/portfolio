@@ -1,10 +1,14 @@
 "use client";
 
-import { DOCK_LINKS as items } from "./constants";
-import DockItem from "./dock-item";
+import DockItem from "./item";
+import { DockDataType } from "./type";
 
-const Items = () => {
-  return items.map((item) => <DockItem key={item.label} {...item} />);
+type DockItemsType = {
+  data: DockDataType[];
 };
 
-export default Items;
+const DockItems = ({ data }: DockItemsType) => {
+  return data.map((item) => <DockItem key={item.label} {...item} />);
+};
+
+export default DockItems;

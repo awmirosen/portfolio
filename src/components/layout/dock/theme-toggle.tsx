@@ -8,7 +8,7 @@ export const ThemeToggleButton = () => {
 
   return (
     <button
-      className="p-2 rounded-full cursor-pointer transition-all duration-300"
+      className="p-2 rounded-full cursor-pointer transition-all duration-300 hover:bg-border"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? <SunDim size={20} /> : <Moon size={20} />}

@@ -1,8 +1,15 @@
+import Container from "@/components/ui/container";
+import Picture from "./picture";
+
 const Hero = () => {
   return (
-    <div className="h-screen">
-      <p>Hero</p>
-    </div>
+    <section className="min-h-screen">
+      <Container>
+        <div className="flex w-full min-h-screen items-center justify-center">
+          <Picture />
+        </div>
+      </Container>
+    </section>
   );
 };
 

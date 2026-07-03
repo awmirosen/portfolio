@@ -1,13 +1,16 @@
-import Items from "./items";
+import { PAGES_DATA, SOCIALS_DATA } from "./data";
+import DockItems from "./items";
+import Seprator from "./seprator";
 import { ThemeToggleButton } from "./theme-toggle";
 
 const List = () => {
   return (
     <div className="w-full h-full flex justify-center items-center gap-x-2">
-      <Items />
+      <DockItems data={PAGES_DATA} />
 
-      <span className="w-0.5 h-full bg-primary/20 mx-2" />
+      <Seprator />
 
+      <DockItems data={SOCIALS_DATA} />
       <ThemeToggleButton />
     </div>
   );
