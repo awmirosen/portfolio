@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HERO_DATA as user } from "./data";
+import { USER_DATA as user } from "@/data/user";
 
 const Picture = () => {
   return (

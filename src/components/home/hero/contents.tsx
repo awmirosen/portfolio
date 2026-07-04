@@ -1,9 +1,9 @@
-import { HERO_DATA as user } from "./data";
+import { USER_DATA as user } from "@/data/user";
 import Icon from "./icon";
 import { LuPencilRuler, LuFileCode2 } from "react-icons/lu";
 
 export const Greetings = () => {
-  return <span className="uppercase">hi im</span>;
+  return <span className="uppercase">hi my name is</span>;
 };
 
 export const Name = () => {
