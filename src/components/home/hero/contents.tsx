@@ -8,7 +8,7 @@ export const Greetings = () => {
 
 export const Name = () => {
   return (
-    <h1 className="text-[1.4rem] max-md:text-[1.2] max-sm:text-[1.1rem] font-black mb-2">
+    <h1 className="text-[1.4rem] max-md:text-[1.25rem] max-sm:text-[1.1rem] font-black mb-2">
       {user.name}
     </h1>
   );
@@ -23,9 +23,9 @@ export const Title = () => {
 };
 
 export const IconPencil = () => {
-  return <Icon Icon={LuPencilRuler} size={45} classes="rotate-25" />;
+  return <Icon Icon={LuPencilRuler} size={55} className="rotate-25" />;
 };
 
 export const IconFileCode = () => {
-  return <Icon Icon={LuFileCode2} size={45} classes="-rotate-25" />;
+  return <Icon Icon={LuFileCode2} size={45} className="-rotate-25" />;
 };
