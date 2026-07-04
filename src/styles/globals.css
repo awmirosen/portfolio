@@ -7,50 +7,76 @@
 
   --card: oklch(1 0 0);
 
-  --primary: oklch(0.145 0.006 285);
+  --primary: oklch(61.31% 0.21205 256.347);
 
-  --secondary: oklch(0.94 0.003 285);
+  --secondary: oklch(0.95 0.004 285);
 
-  --muted: oklch(0.6 0.015 285);
+  --muted: oklch(0.58 0.015 285);
 
-  --border: oklch(0.88 0.005 285);
+  --border: oklch(0.145 0.006 285);
 
-  --accent: oklch(0.91 0.006 285);
-  --accent-foreground: oklch(0.145 0.006 285);
+  --accent: oklch(0.94 0.01 258);
+  --accent-foreground: var(--foreground);
+
+  --shadow-color: #000;
+
+  --shadow-sm: 3px 3px 0 var(--shadow-color);
+  --shadow-md: 5px 5px 0 var(--shadow-color);
+  --shadow-lg: 8px 8px 0 var(--shadow-color);
 }
 
 .dark {
   --background: oklch(0.14 0.006 285);
 
-  --foreground: oklch(0.98 0 0);
+  --foreground: oklch(0.985 0 0);
 
   --card: oklch(0.18 0.008 285);
 
-  --primary: oklch(0.98 0 0);
+  --primary: oklch(0.72 0.22 258);
 
-  --secondary: oklch(0.25 0.008 285);
+  --secondary: oklch(0.24 0.01 285);
 
-  --muted: oklch(0.72 0.015 285);
+  --muted: oklch(0.73 0.015 285);
 
-  --border: oklch(0.3 0.008 285);
+  --border: oklch(0.985 0 0);
 
-  --accent: oklch(0.34 0.01 285);
-  --accent-foreground: oklch(0.98 0 0);
+  --accent: oklch(0.26 0.01 258);
+  --accent-foreground: var(--foreground);
+
+  --shadow-color: oklch(0.42 0.16 258);
+
+  --shadow-sm: 3px 3px 0 var(--shadow-color);
+  --shadow-md: 5px 5px 0 var(--shadow-color);
+  --shadow-lg: 8px 8px 0 var(--shadow-color);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --color-card: var(--card);
+
   --color-primary: var(--primary);
+
   --color-secondary: var(--secondary);
+
   --color-muted: var(--muted);
+
   --color-border: var(--border);
+
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
 }
 
 @layer base {
+  * {
+    border-color: var(--border);
+  }
+
   body {
     background: var(--background);
     color: var(--foreground);

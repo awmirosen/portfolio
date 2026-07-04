@@ -8,6 +8,9 @@ const Hero = () => {
         <div className="flex w-full min-h-screen items-center justify-center">
           <Picture />
         </div>
+         <div className="flex w-full min-h-screen items-center justify-center">
+          <Picture />
+        </div>
       </Container>
     </section>
   );
