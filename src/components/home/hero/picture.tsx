@@ -8,7 +8,8 @@ const Picture = () => {
       src={user.image}
       width={200}
       height={200}
-      className="rounded-full"
+      loading="eager"
+      className="border-2 shadow-sm"
     />
   );
 };

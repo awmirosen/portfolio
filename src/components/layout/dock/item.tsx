@@ -8,7 +8,7 @@ const DockItem = ({ href, icon: Icon, external = false }: DockDataType) => {
   return (
     <Link
       href={href}
-      className={`flex p-2 hover:bg-primary/20 hover:scale-105 ${path === href && "bg-primary text-secondary hover:bg-primary!"}`}
+      className={`flex p-1.5 hover:bg-primary/20 hover:scale-105 ${path === href && "bg-primary text-secondary shadow-sm hover:bg-primary!"}`}
       target={external ? "_blank" : undefined}
     >
       {<Icon size={20} />}

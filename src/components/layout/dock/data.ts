@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, FolderOpen, Cat } from "lucide-react";
+import { Home, Notebook, Cat } from "lucide-react";
 
 export const PAGES_DATA = [
   {
@@ -9,9 +9,9 @@ export const PAGES_DATA = [
     icon: Home,
   },
   {
-    label: "Projects",
-    href: "/projects",
-    icon: FolderOpen,
+    label: "Blog",
+    href: "/blog",
+    icon: Notebook,
   },
 ];
 

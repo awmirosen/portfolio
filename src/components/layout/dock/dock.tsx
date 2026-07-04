@@ -1,7 +1,7 @@
 import List from "./list";
 const Dock = () => {
   return (
-    <div className="fixed top-4 left-1/2 -translate-x-1/2 h-12 p-2 border-2 bg-background z-50">
+    <div className="fixed top-4 left-1/2 -translate-x-1/2 h-12 p-2 border-2 bg-background shadow-md z-50">
       <List />
     </div>
   );

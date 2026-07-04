@@ -27,7 +27,6 @@
 
 .dark {
   --background: oklch(0.14 0.006 285);
-
   --foreground: oklch(0.985 0 0);
 
   --card: oklch(0.18 0.008 285);
@@ -38,12 +37,13 @@
 
   --muted: oklch(0.73 0.015 285);
 
-  --border: oklch(0.985 0 0);
+  --border: oklch(0.95 0 0);
 
   --accent: oklch(0.26 0.01 258);
+
   --accent-foreground: var(--foreground);
 
-  --shadow-color: oklch(0.42 0.16 258);
+  --shadow-color: rgba(0,0,0,0.85);
 
   --shadow-sm: 3px 3px 0 var(--shadow-color);
   --shadow-md: 5px 5px 0 var(--shadow-color);
