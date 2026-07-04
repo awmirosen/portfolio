@@ -6,8 +6,8 @@ const Picture = () => {
     <Image
       alt={`${user.name} s picture`}
       src={user.image}
-      width={200}
-      height={200}
+      width={150}
+      height={150}
       loading="eager"
       className="border-2 shadow-sm"
     />

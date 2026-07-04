@@ -1,17 +1,17 @@
 "use client";
 
-import { Home, Notebook, Cat } from "lucide-react";
+import { LuHouse, LuNotebook, LuGithub } from "react-icons/lu";
 
 export const PAGES_DATA = [
   {
     label: "Home",
     href: "/",
-    icon: Home,
+    icon: LuHouse,
   },
   {
     label: "Blog",
     href: "/blog",
-    icon: Notebook,
+    icon: LuNotebook,
   },
 ];
 
@@ -19,7 +19,7 @@ export const SOCIALS_DATA = [
   {
     label: "Github",
     href: "https://github.com/awmirosen",
-    icon: Cat,
+    icon: LuGithub,
     external: true,
   },
 ];
