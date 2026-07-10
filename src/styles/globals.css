@@ -19,10 +19,6 @@
   --accent-foreground: var(--foreground);
 
   --shadow-color: #000;
-
-  --shadow-sm: 3px 3px 0 var(--shadow-color);
-  --shadow-md: 5px 5px 0 var(--shadow-color);
-  --shadow-lg: 8px 8px 0 var(--shadow-color);
 }
 
 .dark {
@@ -40,14 +36,9 @@
   --border: oklch(0.95 0 0);
 
   --accent: oklch(0.26 0.01 258);
-
   --accent-foreground: var(--foreground);
 
-  --shadow-color: rgba(0,0,0,0.85);
-
-  --shadow-sm: 3px 3px 0 var(--shadow-color);
-  --shadow-md: 5px 5px 0 var(--shadow-color);
-  --shadow-lg: 8px 8px 0 var(--shadow-color);
+  --shadow-color: rgba(0, 0, 0, 0.85);
 }
 
 @theme inline {
@@ -66,10 +57,38 @@
 
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+}
 
-  --shadow-sm: var(--shadow-sm);
-  --shadow-md: var(--shadow-md);
-  --shadow-lg: var(--shadow-lg);
+/* Shadows */
+
+@utility shadow-sm {
+  box-shadow: 3px 3px 0 var(--shadow-color);
+}
+
+@utility shadow-md {
+  box-shadow: 5px 5px 0 var(--shadow-color);
+}
+
+@utility shadow-lg {
+  box-shadow: 8px 8px 0 var(--shadow-color);
+}
+
+/* Shadow Colors */
+
+@utility shadow-primary {
+  --shadow-color: var(--color-primary);
+}
+
+@utility shadow-border {
+  --shadow-color: var(--color-border);
+}
+
+@utility shadow-foreground {
+  --shadow-color: var(--color-foreground);
+}
+
+@utility shadow-white {
+  --shadow-color: white;
 }
 
 @layer base {

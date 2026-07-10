@@ -1,10 +1,11 @@
 import Container from "@/components/layout/container";
+import Title from "./title";
 
 const About = () => {
   return (
     <section className="min-h-screen">
       <Container>
-        <div>about me</div>
+        <Title />
       </Container>
     </section>
   );
