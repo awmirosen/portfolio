@@ -1,7 +1,34 @@
-export const USER_DATA = {
+export type UserDataType = {
+  name: string;
+  title: string;
+  image: string;
+  birth: string;
+  email: string;
+
+  about: {
+    bio: string;
+    careerStart: string;
+
+    location: {
+      city: string;
+      country: string;
+    };
+  };
+};
+
+export const USER_DATA: UserDataType = {
   name: "AmirHosein Mohamadi",
   title: "Frontend Developer",
   image: "/awmirosen_profile_picture.jpg",
   birth: "2003-01-01",
-  mail: "mail@awmirosen.ir",
+  email: "mail@awmirosen.ir",
+  about: {
+    bio:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus placeat nemo alias, impedit dolorem quidem ullam neque aperiam aliquid maiores consequuntur soluta maxime numquam!",
+    careerStart: "2025-05-26",
+    location: {
+      city: "Tehran",
+      country: "Iran",
+    },
+  },
 };
