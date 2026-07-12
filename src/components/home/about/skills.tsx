@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <>
       {skills.map((item) => (
-        <SkillCard key={item.title} {...item} color={item.color} />
+        <SkillCard key={item.title} {...item} />
       ))}
     </>
   );

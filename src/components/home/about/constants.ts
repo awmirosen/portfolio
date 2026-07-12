@@ -64,7 +64,7 @@ export const SKILLS_DATA: SkillsType[] = [
   {
     title: "JavaScript",
     icon: RiJavascriptFill,
-    className: "text-[#D4B106] dark:text-[#FDE047]"
+    className: "text-[#D4B106] dark:text-[#FDE047]",
   },
   {
     title: "TypeScript",
