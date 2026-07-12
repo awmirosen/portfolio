@@ -1,59 +1,36 @@
-import { ElementType, ReactNode } from "react";
-
-// TYPES //
-
-type RootType = {
-  children: ReactNode;
+type SkillCardType = {
+  icon: React.ElementType;
+  title: string;
+  content?: string;
+  className?: string;
 };
 
-type IconType = {
-  icon: ElementType;
-};
+const SkillCard = ({
+  title,
+  content,
+  icon: Icon,
+  className,
+}: SkillCardType) => (
+  <div
+    className={`min-w-22 flex flex-col items-center border-2 text-center cursor-pointer ${className}`}
+  >
+    {/* ICON */}
+    <div className="flex items-center justify-center my-2">
+      <Icon size={24} />
+    </div>
 
-type ContentType = {
-  children: ReactNode;
-};
+    {/* TITLE */}
 
-type TitleType = {
-  children: ReactNode;
-};
+    <h3 className="text-[0.75rem] font-semibold uppercase mb-1.5 text-foreground!">
+      {title}
+    </h3>
 
-type DescriptionType = {
-  children: ReactNode;
-};
+    {/* CONTENT */}
 
-// CARD //
-
-const Root = ({ children }: RootType) => (
-  <div className="flex flex-col items-center border-2 p-1 text-center">
-    {children}
+    {content && (
+      <div className="flex flex-col text-[0.7rem] mb-1.5">{content}</div>
+    )}
   </div>
 );
-
-const Icon = ({ icon: Icon }: IconType) => (
-  <div className="flex size-12 items-center justify-center">
-    <Icon size={24} />
-  </div>
-);
-
-const Title = ({ children }: TitleType) => (
-  <h3 className="text-[0.9rem] font-semibold uppercase">{children}</h3>
-);
-
-const Content = ({ children }: ContentType) => (
-  <div className="flex flex-col">{children}</div>
-);
-
-const Description = ({ children }: DescriptionType) => (
-  <span className="text-xs text-muted">{children}</span>
-);
-
-const SkillCard = {
-  Root,
-  Icon,
-  Content,
-  Title,
-  Description,
-};
 
 export default SkillCard;

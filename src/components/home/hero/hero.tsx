@@ -9,12 +9,12 @@ const Hero = () => {
       <Container>
         <div className="grid grid-cols-12 grid-rows-5 w-full min-h-screen select-none uppercase">
           {/* PICTURE */}
-          <div className="col-start-2 col-span-4 row-start-3 row-span-2 max-sm:col-start-3 max-sm:col-span-3">
+          <div className="col-start-2 col-span-4 row-start-3 row-span-2 max-sm:col-start-2 max-sm:col-span-3">
             <Picture />
           </div>
 
           {/* CONTENTS */}
-          <div className="col-start-6 col-span-6 row-start-3 row-span-2 max-md:col-span-8  px-4">
+          <div className="col-start-6 col-span-6 row-start-3 row-span-2 max-md:col-span-8 px-4">
             <Greetings />
             <Name />
             <Title />

@@ -6,9 +6,7 @@ export type UserDataType = {
   email: string;
 
   about: {
-    bio: string;
     careerStart: string;
-
     location: {
       city: string;
       country: string;
@@ -23,8 +21,6 @@ export const USER_DATA: UserDataType = {
   birth: "2003-01-01",
   email: "mail@awmirosen.ir",
   about: {
-    bio:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus placeat nemo alias, impedit dolorem quidem ullam neque aperiam aliquid maiores consequuntur soluta maxime numquam!",
     careerStart: "2025-05-26",
     location: {
       city: "Tehran",

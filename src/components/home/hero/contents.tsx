@@ -8,7 +8,7 @@ export const Greetings = () => {
 
 export const Name = () => {
   return (
-    <h1 className="text-[1.75rem] max-md:text-[1.25rem] max-sm:text-[1.1rem] font-black mb-6">
+    <h1 className="text-[1.75rem] max-md:text-[1.25rem] max-sm:text-[1.1rem] font-black mb-6 max-sm:mb-2">
       {user.name}
     </h1>
   );
@@ -16,7 +16,7 @@ export const Name = () => {
 
 export const Title = () => {
   return (
-    <span className="p-1 bg-background border-2 shadow-sm shadow-primary text-lg max-sm:text-base my-1">
+    <span className="p-1 bg-background border-2 shadow-sm shadow-primary text-lg max-sm:text-sm my-1">
       {user.title}
     </span>
   );
