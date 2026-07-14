@@ -1,7 +1,7 @@
 type SkillCardType = {
   icon: React.ElementType;
   title: string;
-  content?: string;
+  content?: string | number;
   className?: string;
 };
 
@@ -12,16 +12,16 @@ const SkillCard = ({
   className,
 }: SkillCardType) => (
   <div
-    className={`min-w-22 flex flex-col items-center border-2 text-center cursor-pointer ${className}`}
+    className={`min-w-22 flex flex-col items-center border-2 cursor-pointer text-center ${className} ${!className && "cursor-default! shadow-sm"}`}
   >
     {/* ICON */}
     <div className="flex items-center justify-center my-2">
-      <Icon size={24} />
+      <Icon size={22} />
     </div>
 
     {/* TITLE */}
 
-    <h3 className="text-[0.75rem] font-semibold uppercase mb-1.5 text-foreground!">
+    <h3 className="text-[0.73rem] font-semibold uppercase mb-1.5 text-foreground!">
       {title}
     </h3>
 

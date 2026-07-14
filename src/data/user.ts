@@ -1,6 +1,6 @@
 export type UserDataType = {
   name: string;
-  title: string;
+  titles: string[];
   image: string;
   birth: string;
   email: string;
@@ -16,7 +16,7 @@ export type UserDataType = {
 
 export const USER_DATA: UserDataType = {
   name: "AmirHosein Mohamadi",
-  title: "Frontend Developer",
+  titles: ["Frontend Developer", "Ui Designer"],
   image: "/awmirosen_profile_picture.jpg",
   birth: "2003-01-01",
   email: "mail@awmirosen.ir",

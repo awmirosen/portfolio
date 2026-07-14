@@ -1,6 +1,6 @@
 import { USER_DATA as user } from "@/data/user";
 
-import { LuUserCheck, LuMapPin } from "react-icons/lu";
+import { LuUser, LuCrown, LuMapPin, LuBox } from "react-icons/lu";
 
 import {
   RiHtml5Fill,
@@ -13,6 +13,8 @@ import {
   RiFigmaFill,
 } from "react-icons/ri";
 
+import { DiIllustrator, DiPhotoshop } from "react-icons/di";
+
 import { SiTypescript, SiPrisma, SiDocker, SiPostgresql } from "react-icons/si";
 
 // ABOUT_DATA
@@ -21,24 +23,39 @@ type UserAboutType = {
   id: string;
   title: string;
   icon: React.ElementType;
-  content: string;
+  content: string | number;
 };
 
 const career =
   new Date().getFullYear() - new Date(user.about.careerStart).getFullYear();
 
+const user_age = new Date().getFullYear() - new Date(user.birth).getFullYear();
+
 export const USER_ABOUT: UserAboutType[] = [
   {
-    id: "career-start",
-    title: "Career",
-    icon: LuUserCheck,
-    content: `${career.toString()} Year`,
+    id: "user_age",
+    title: "Age",
+    icon: LuUser,
+    content: user_age,
   },
+
   {
-    id: "location",
+    id: "user_location",
     title: "Location",
     icon: LuMapPin,
     content: `${user.about.location.city}-${user.about.location.country}`,
+  },
+  {
+    id: "career-start",
+    title: "Career",
+    icon: LuCrown,
+    content: `${career.toString()} Year`,
+  },
+  {
+    id: "user_projects_count",
+    title: "Projects",
+    icon: LuBox,
+    content: 2,
   },
 ];
 
@@ -110,5 +127,15 @@ export const SKILLS_DATA: SkillsType[] = [
     title: "Figma",
     icon: RiFigmaFill,
     className: "text-[#F24E1E] dark:text-[#FB7185]",
+  },
+  {
+    title: "Photoshop",
+    icon: DiPhotoshop,
+    className: "text-[#31A8FF] dark:text-[#6BC5FF]",
+  },
+  {
+    title: "Illustrator",
+    icon: DiIllustrator,
+    className: "text-[#FF9A00] dark:text-[#FFC56E]",
   },
 ];
