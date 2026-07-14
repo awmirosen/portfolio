@@ -26,11 +26,13 @@ const ProjectCard = ({ project }: ProjectCardType) => {
       <div>
         {/* title */}
 
-        <h6 className="font-bold text-lg">{project.title}</h6>
+        <h6 className="font-bold text-lg mb-1">{project.title}</h6>
 
         {/* description */}
 
-        <p className="line-clamp-3">{project.description}</p>
+        <p className="line-clamp-3 text-sm select-none">
+          {project.description}
+        </p>
       </div>
       {/* CARD FOOT */}
       <div className="flex p-1">
@@ -39,7 +41,7 @@ const ProjectCard = ({ project }: ProjectCardType) => {
           <Tecnologies technologies={project.technologies} />
         </div>
         {/* links */}
-        <div className="w-1/3 flex justify-end items-center gap-x-2">
+        <div className="w-1/3 flex justify-end items-center gap-x-4">
           <Links links={project.links} />
         </div>
       </div>
@@ -47,4 +49,4 @@ const ProjectCard = ({ project }: ProjectCardType) => {
   );
 };
 
-export default ProjectCard
+export default ProjectCard;

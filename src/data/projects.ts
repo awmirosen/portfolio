@@ -36,7 +36,30 @@ export const USER_PROJECTS: UserProjectsType[] = [
       {
         title: "website",
         url: "https://benevis.vercel.app",
-        icon: LuExternalLink ,
+        icon: LuExternalLink,
+      },
+    ],
+  },
+  {
+    title: "dropbaz",
+    description:
+      "Dropbaz is a fast and lightweight online clipboard that lets users securely share text using unique codes.",
+    images: {
+      logo: "",
+      banner: "/dropbaz_banner.webp",
+    },
+    category: "web-app",
+    technologies: ["react", "next-js", "typescript", "prisma"],
+    links: [
+      {
+        title: "github",
+        url: "https://github.com/awmirosen/dropbaz",
+        icon: LuGithub,
+      },
+      {
+        title: "website",
+        url: "https://drop.awmirosen.ir",
+        icon: LuExternalLink,
       },
     ],
   },
