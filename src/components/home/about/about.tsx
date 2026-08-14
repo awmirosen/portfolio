@@ -1,5 +1,5 @@
-import Container from "@/components/layout/container";
-import Title from "./title";
+import {Container} from '@/components/layout/container'
+import AboutTitle from "./title";
 import Bio from "./bio";
 import Content from "./content";
 import Skills from "./skills";
@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section className="min-h-screen">
       <Container>
-        <Title />
+        <AboutTitle />
 
         <div className="border-2 shadow-md p-6">
           <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-6 max-md:grid-cols-1">

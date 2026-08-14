@@ -20,7 +20,7 @@ export const Title = () => {
       {user.titles.map((title) => (
         <span
           key={title}
-          className="border-2 bg-background px-2 py-1 shadow-sm shadow-primary"
+          className="border-2 bg-background px-2 py-1 shadow-sm shadow-primary select-none"
         >
           {title}
         </span>

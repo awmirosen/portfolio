@@ -1,4 +1,4 @@
-import Container from "@/components/layout/container";
+import {Container} from '@/components/layout/container'
 import Picture from "./picture";
 
 import { Greetings, Name, Title, IconPencil, IconFileCode } from "./contents";

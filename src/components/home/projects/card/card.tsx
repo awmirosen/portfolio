@@ -30,14 +30,14 @@ const ProjectCard = ({ project }: ProjectCardType) => {
 
         {/* description */}
 
-        <p className="line-clamp-3 text-sm select-none">
+        <p className="line-clamp-3 text-sm">
           {project.description}
         </p>
       </div>
       {/* CARD FOOT */}
       <div className="flex p-1">
         {/* tecnologies */}
-        <div className="w-2/3 flex flex-wrap gap-2">
+        <div className="w-2/3 flex flex-wrap gap-2 items-center">
           <Tecnologies technologies={project.technologies} />
         </div>
         {/* links */}
