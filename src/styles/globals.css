@@ -91,6 +91,16 @@
   --shadow-color: white;
 }
 
+@utility highlight-item {
+  background-color: var(--color-primary);
+  color: white;
+  padding-inline: 0.2rem;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0.2rem 0.4rem;
+}
+
 @layer base {
   * {
     border-color: var(--border);
